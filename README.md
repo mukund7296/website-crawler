@@ -1,7 +1,7 @@
 # website-crawler
 # Website Crawler Analysis Tool - Step-by-Step Implementation
 
-I'll create this project incrementally, showing the progression through commits. Here's how I'll approach it:
+showing the progression through commits. Here's how I'll approach it:
 
 ## Step 1: Project Setup and Scaffolding
 
