@@ -9,12 +9,65 @@ cd website-crawler
 git init
 ```
 
+
 2. Create backend and frontend directories:
 ```bash
 mkdir backend frontend
 ```
 
 ## Step 2: Backend Setup (Go)
+
+It looks like you're trying to initialize a Go module using `go mod init`, but your system is giving the error:
+
+```
+zsh: command not found: go
+```
+
+---
+
+### 🛠️ What this means:
+
+Your terminal (Zsh) doesn't recognize the `go` command because **Go (Golang)** is **not installed** on your system — or it's not added to your system `PATH`.
+
+---
+
+### ✅ How to Fix It
+
+#### 1. **Install Go**
+
+If you're using macOS, the easiest way is with **Homebrew**:
+
+```bash
+brew install go
+```
+
+> If you don’t have Homebrew, install it from: [https://brew.sh/](https://brew.sh/)
+
+#### 2. **Verify Installation**
+
+After installation, restart your terminal and run:
+
+```bash
+go version
+```
+
+You should see output like:
+
+```
+go version go1.21.0 darwin/amd64
+```
+
+#### 3. **Retry your command**
+
+Then go back to your project folder:
+
+```bash
+cd /Users/React/website-crawler/backend
+go mod init website-crawler/backend
+```
+
+---
+
 
 1. Initialize Go module:
 ```bash
@@ -135,10 +188,14 @@ cd ../frontend
 npx create-react-app . --template typescript
 ```
 
+<img width="570" height="220" alt="image" src="https://github.com/user-attachments/assets/1e800d97-e72e-4081-9510-d3c5d341cae5" />
+
+
 2. Install dependencies:
 ```bash
 npm install axios react-router-dom @mui/material @mui/icons-material @mui/x-data-grid chart.js react-chartjs-2 jwt-decode
 ```
+<img width="549" height="240" alt="image" src="https://github.com/user-attachments/assets/f003ca05-68eb-4ccc-bd91-d5c1ce7762c8" />
 
 3. Create basic structure:
 ```
@@ -725,4 +782,3 @@ This implementation covers all the requirements:
 - Real-time status updates
 - Responsive design
 
-Would you like me to elaborate on any specific part or add additional features?
